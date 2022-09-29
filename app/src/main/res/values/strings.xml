@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SignIn</string>
+
+    <string-array name="rol">
+
+        <item>Vendedor</item>
+        <item>Comprador</item>
+        <item>Domiciliario</item>
+
+    </string-array>
+
+</resources>

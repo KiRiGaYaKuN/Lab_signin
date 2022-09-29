@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Sigin"
+    android:background="#F9F2ED">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#3AB0FF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="CREAR USUARIO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#3AB0FF"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_border"
+            android:backgroundTint="#3AB0FF"
+            android:hint="Nombre completo"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#FFFFFF"
+        >
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:backgroundTint="#3AB0FF"
+            android:hint="Usuario"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#FFFFFF"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:backgroundTint="#3AB0FF"
+            android:hint="Email"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:id="@+id/psw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:backgroundTint="#3AB0FF"
+            android:hint="Password"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        >
+        <EditText
+            android:id="@+id/confpsw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:backgroundTint="#3AB0FF"
+            android:hint="Confirmar password"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFB562"
+        android:background="@drawable/style_borde"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:contentDescription="@string/app_name"
+        android:entries="@array/rol"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#FFFFFF"
+        >
+        <EditText
+            android:id="@+id/nacimiento"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:backgroundTint="#3AB0FF"
+            android:hint="Fecha de nacimiento"
+            android:minHeight="48dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:focusable="false"
+            android:clickable="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
